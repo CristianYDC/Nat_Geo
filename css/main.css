@@ -1,0 +1,381 @@
+@font-face {
+    font-family: 'Geo_1';
+    src: url('../font/Geo_1.woff2');
+}
+
+@font-face {
+    font-family: 'Geo_2';
+    src: url('../font/Geo_2.woff2');
+}
+
+@font-face {
+    font-family: 'Geo_3';
+    src: url('../font/Geo_3.woff2');
+}
+
+:root{
+    --font-size-info-top: 10px;
+    --font-size-title:82.45px;
+    --font-size-sub-title:48px;
+    --background-image: url('../img/img1.jpg');
+    --font-size-sections-desktop:14px;
+    --font-size-menu-interactions:32px;
+    --color-border-nav:#c7c7c762;
+    --font-color-menu:#A5A5A5;
+    --color-title:#E6E6E6;
+    --white-color-basic:#ffff;
+    --color-black-basic:#000000;
+    --primary-yellow:#FFCC00;
+}
+
+body{
+    line-height: 1.5;
+    letter-spacing: .02em;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+/* -------------------------------- Subscribe ------------------------------- */
+.subscribe{
+    background-color: var(--color-black-basic);
+    font-family: 'Geo_1';
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-style: normal;
+    padding: 8px 24px;
+    width: 100%;
+}
+
+.subscribe__list{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items__subscribe:nth-child(2) {
+    display: none;
+}
+
+
+.items__subscribe{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+
+.link__subscribe{
+    color: var(--white-color-basic);
+    font-size: 10px;
+}
+
+/* --------------------------------- Nav-bar -------------------------------- */
+.logo__contain{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid var(--color-border-nav);
+    border-left: none;
+    border-right: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.logo__link{
+    display: flex;
+    align-items: center;
+}
+
+.logo__icon{
+    display: flex;
+    align-items: center;
+}
+
+.logo__typhography {
+}
+
+.logo__1{
+    width: 20.92px;
+    height: 30px;
+    margin-right:7px ;
+}
+
+.logo__2 {
+    width: 81.42px;
+    height: 26px;
+}
+
+
+.items{
+    display: inline-block;
+    padding: 0px 8px;
+    margin-right: 0.5rem;
+}
+
+.items__links{
+    color: var(--color-black-basic);
+    font-family: 'Geo_1';
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+.search__menu{
+    display: flex;
+    align-items: center;
+    right: 0;
+    height: 100%;
+    border-bottom: none;
+}
+
+.contain__search{
+    border-left: none;
+    border-right: none;
+    height: 100%;
+    border-right: 1px solid var(--color-border-nav);
+}
+
+.search__btn{
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0px 10px;
+}
+
+.icon__search{
+    width: 24px;
+    height: 24px;
+}
+
+.contain__menu{
+    padding: 0px 5px;
+}
+.menu__btn {
+    border: none;
+    background-color: transparent;
+    padding: 0px 16px;
+}
+
+.icon__menu{
+    width: 18px;
+    height: 18px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 Menu mobil                                 */
+/* -------------------------------------------------------------------------- */
+
+.nav__menu {
+    max-width: 500px;
+    width: 320px;
+    position: absolute;
+    top: 100%;
+    overflow-x: hidden;
+}
+
+.menu__bar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    min-width: auto;
+    transition: all .6s;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    padding-left: 10PX;
+}
+
+.items {
+    list-style: none;
+}
+
+.links__items {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    color: black;
+    white-space: nowrap;
+    font-family: 'Geo_1';
+}
+
+.btn__left,
+.btn__right {
+    width: 40px;
+    height: 45px;
+    border: none;
+}
+
+.btn__right {
+    width: 60px;
+    border: none;
+    background: linear-gradient(to right, #ffffffb4 14%, #ffffff 70%);
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+.btn__left {
+    width: 40px;
+    height: 45px;
+    border: none;
+    background: linear-gradient(to left, #ffffffb4 14%, #ffffff 70%);
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+
+.clickable {
+    width: 30px;
+    height: 30px;
+}
+
+.icon__left,
+.icon__rigth {
+    width: 18px;
+    height: 18px;
+}
+
+
+
+
+
+/* ------------------------------- menu modal ------------------------------- */
+
+.menu__modal {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1);
+    padding: 80px 32px 128px;
+    background-color: var(--color-black-basic);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    font-size: 'Geo_1';
+}
+
+
+.title__modal{
+    font-size: 10px;
+    font-family: 'Geo_1';
+    color: var(--font-color-menu);
+    letter-spacing: 3px;
+}
+/* ------------------------ Responsive media queries ------------------------ */
+
+@media screen and (min-width: 375px){
+
+.nav__menu {
+        max-width: 375px;
+        width: 375px;
+    }
+    .menu__modal{
+    }
+}
+
+@media screen and (min-width: 425px) {
+
+    .nav__menu {
+        max-width: 424px;
+        width: 424px;
+    }
+
+    .items__subscribe:nth-child(2) {
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .nav__menu {
+        max-width: 768px;
+        width: 768px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .items__subscribe:nth-child(2) {
+        display: none;
+    }
+
+    .btn__left,
+    .btn__right,
+    .icon__right {
+        display: none;
+    }
+}
+.close__btn {
+    background-color: transparent;
+    border: none;
+    filter: invert();
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin: 17px;
+}
+
+.close__icon{
+    width: 20px;
+}
+
+.menu__modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.links__items_modal{
+    font-family: 'Geo_1';
+    color: var(--font-color-menu);
+    letter-spacing: 3px;
+}
+
+.search__modal{
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    filter: invert();
+    position: absolute;
+    padding: 25px;
+    top: 0;
+}
+
+.icon__search_modal{
+    width: 18px;
+}
